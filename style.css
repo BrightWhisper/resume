@@ -12,13 +12,12 @@ body {
 }
 .layout {
   max-width: 900px;
-  margin: 0 auto;
-  border: 2px solid #0ea9af;
+  margin: 10px auto;
+  box-shadow: 1px 1px 20px #ccc;
 }
 
 header {
   background-color: #0ea9af;
-  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +42,8 @@ header > .basic {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .basic > .basic-detail {
@@ -50,11 +51,10 @@ header > .basic {
 }
 
 .basic > .basic-detail.first-row {
-  padding-top: 10px;
+  padding-top: 5px;
 }
 
 .basic > .basic-detail.second-row {
-  padding-bottom: 10px;
   width: 100%;
 }
 
@@ -92,7 +92,8 @@ a:active {
 }
 
 main {
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 166px);
+  border: 1px solid #fff;
 }
 
 .main-detail {
@@ -105,12 +106,12 @@ main {
 
 .main-detail > h1 {
   color: #419ca4;
-  font-size: 1.5em;
+  font-size: 1.3em;
   position: absolute;
   padding: 0 40px;
-  top: -20px;
+  top: -15px;
   left: 50%;
-  background-color: white;
+  background-color: #fff;
   transform: translateX(-50%);
 }
 
@@ -120,7 +121,7 @@ main {
   text-align: initial;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .avater {
     width: 50%;
   }
@@ -129,5 +130,16 @@ main {
   }
   .basic {
     width: 100%;
+    margin-right: 5%;
+  }
+  header > .avater {
+    padding-bottom: 0;
+  }
+}
+
+@media print {
+  .layout {
+    box-shadow: unset;
+    margin: 0 auto;
   }
 }
