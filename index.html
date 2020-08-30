@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>在线简历</title>
+    <title>王书宇-Web前端工程师</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="layout" id="page">
         <header>
-            <div class="avater">
+            <!-- <div class="avater">
                 <img src="./assets/avater.jpg" alt="头像">
-            </div>
+            </div> -->
             <div class="name">
                 <h1>王书宇</h1>
                 <p>求职意向：web前端工程师</p>
@@ -21,7 +21,7 @@
             <div class="basic">
                 <div class="basic-detail first-row">
                     <img src="./assets/person.png" alt="年龄">
-                    <span>25岁</span>
+                    <span>男 · 25岁</span>
                 </div>
                 <div class="basic-detail first-row">
                     <img src="./assets/phone.png" alt="电话" class="phone">
@@ -29,7 +29,7 @@
                 </div>
                 <div class="basic-detail">
                     <img src="./assets/school.png" alt="学历">
-                    <span>东北大学(本科)</span>
+                    <span>东北大学/本科/电子信息工程</span>
                 </div>
                 <div class="basic-detail">
                     <img src="./assets/email.png" alt="邮箱">
@@ -37,11 +37,11 @@
                 </div>
                 <div class="basic-detail" style="width: 100%;">
                     <img src="./assets/github.png" alt="github主页">
-                    <a href="https://biaoge.monster/" target="_blank">https://github.com/BrightWhisper</a>
+                    <a href="https://github.com/BrightWhisper" target="_blank">https://github.com/BrightWhisper</a>
                 </div>
                 <div class="basic-detail second-row">
                     <img src="./assets/blog.png" alt="博客" class="blog">
-                    <span><a href="https://biaoge.monster/" target="_blank">https://biaoge.monster/</a></span>
+                    <a href="https://brightwhisper.github.io/" target="_blank">https://brightwhisper.github.io/</a>
                 </div>
             </div>
         </header>
@@ -49,15 +49,68 @@
             <div class="content">
                 <section class="main-detail">
                     <h1>个人技能</h1>
-                    <p>啥都会，懂？</p>
+                    <div class="section-content">
+                        <ul style="margin-left: 15px;color:rgba(0,0,0,0.7)">
+                            <li>能够使用<b class="boldWords">HTML5</b>和<b class="boldWords">CSS3</b>进行符合WEB标准的语义化开发，高度还原设计稿。</li>
+                            <li>熟悉<b class="boldWords">JavaScript</b>，掌握<b class="boldWords">ES6</b>语法。</li>
+                            <li>熟悉<b class="boldWords">Vue/Angular</b>相关技术栈，如<b class="boldWords">VueRouter</b>,<b class="boldWords">Vuex</b>等。</li>
+                            <li>掌握常用的<b class="boldWords">git</b>命令。</li>
+                            <li>了解<b class="boldWords">TypeScript</b>及<b class="boldWords">rxjs</b>的使用。</li>
+                            <li>熟练使用<b class="boldWords">Echarts</b>完成一般的可视化需求。</li>
+                            <li>熟悉<b class="boldWords">Markdown</b>语法，并用其编写技术文档。</li>
+                        </ul>
+                    </div>
                 </section>
                 <section class="main-detail">
                     <h1>工作经历</h1>
-                    <div></div>
+                    <div class="section-content">
+                        <div class="content-header">
+                            <div><b>苏州华信富融软件技术有限公司</b></div>
+                            <div class="content-date"><i>2017.07~2018.07</i></div>
+                        </div>
+                        <div style="color:rgba(0,0,0,0.7);margin-top:5px;">担任前端工程师，对接后端及业务人员完成优衣库相关项目的开发。</div>
+                        <div class="content-header" style="margin-top: 20px;">
+                            <div><b>北京天融信网络安全技术有限公司</b></div>
+                            <div class="content-date"><i>2018.08~2020.06</i></div>
+                        </div>
+                        <div style="color:rgba(0,0,0,0.7);margin-top:5px;">担任前端工程师，带领三人团队完成虚拟化防火墙管理平台的开发。</div>
+                    </div>
                 </section>
                 <section class="main-detail">
                     <h1>项目经验</h1>
-                    <div></div>
+                    <div class="section-content">
+                        <div class="project-header">
+                            <b>小蜗记账</b>
+                        </div>
+                        <ul style="margin-left: 15px; margin-top:8px;">
+                            <li>该项目是一个移动端记账应用，实现了基本的账单添加和统计功能。</li>
+                            <li>使用<b class="boldWords">Vue,Typescript,VueRouter,Vuex</b>等技术栈进行开发。</li>
+                            <li>使用<b class="boldWords">class</b>风格的Vue组件进行编写。</li>
+                            <li>使用<b class="boldWords">localstorage</b>实现应用数据的本地存储功能。</li>
+                        </ul>
+
+                        <div class="project-header" style="margin-top:15px;">
+                            <b>虚拟化防火墙管理平台</b>
+                        </div>
+                        <ul style="margin-left: 15px;margin-top:8px;">
+                            <li>前端项目基于Angular，使用<b class="boldWords">ng-zorro(ant-deign)</b>作为第三方UI库进行开发。</li>
+                            <li>参与决策项目架构，整理开发文档与需求，进行技术预研。</li>
+                            <li>独立承担访问控制，流量监控及日志监控模块的开发。</li>
+                            <li>使用<b class="boldWords">ECharts</b>完成通信关系及各项监控指标的图表绘制，实时反应防火墙状态。</li>
+                            <li>使用<b class="boldWords">Angular-cli</b>和<b class="boldWords">webpack</b>结合的方式进行项目打包，前后端均使用<b class="boldWords">docker</b>部署。</li>
+                            <li>使用<b class="boldWords">Elasticsearch</b>进行日志的查询及存储。</li>
+
+                        </ul>
+
+                        <div class="project-header" style="margin-top:15px;">
+                            <b>优衣库零售供应后台</b>
+                        </div>
+                        <ul style="margin-left: 15px;margin-top:8px;">
+                            <li>基于Angular开发，使用<b class="boldWords">Material-UI</b>风格的组件进行页面布局交互及数据对接。</li>
+                            <li>使用前后端分离的开发模式，与后端确定API文档并<b class="boldWords">mock</b>数据，并行开发。</li>
+                            <li>独立承担原材料相关模块的开发，与业务对接，在第三方UI库不完全满足业务需求的情况下自行开发相关组件。</li>
+                        </ul>
+                    </div>
                 </section>
             </div>
         </main>

@@ -24,14 +24,26 @@ header {
   flex-wrap: wrap;
 }
 
-header > .avater {
+header > .name {
   text-align: center;
   padding: 10px 20px 10px 40px;
 }
-header > .avater > img {
+/* header > .avater > img {
   height: 120px;
   width: 120px;
   border-radius: 50%;
+} */
+.section-content{
+  color: black;
+  font-size: 1rem;
+  text-align:left;
+  margin: 25px 0px;
+  margin-bottom: -15px;
+}
+
+.section-content > .content-header{
+  display:flex;
+  justify-content: space-between;
 }
 
 header > .basic {
@@ -69,8 +81,8 @@ header > .basic {
 }
 
 .basic > .basic-detail > img.blog {
-  width: 1.3em;
-  height: 1.3em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .basic > .basic-detail > span,
@@ -97,7 +109,7 @@ main {
 }
 
 .main-detail {
-  margin: 20px;
+  margin: 20px 35px;
   text-align: center;
   border-top: 3px solid #419ca4;
   position: relative;
@@ -106,7 +118,7 @@ main {
 
 .main-detail > h1 {
   color: #419ca4;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   position: absolute;
   padding: 0 40px;
   top: -15px;
@@ -121,10 +133,11 @@ main {
   text-align: initial;
 }
 
+b.boldWords{
+  color:rgb(35,170,174);padding:0 2px
+}
+
 @media only screen and (max-width: 768px) {
-  .avater {
-    width: 50%;
-  }
   .name {
     width: 50%;
   }
